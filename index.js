@@ -5,14 +5,14 @@
 import './style.css';
 
 // Write Javascript code!
-
-
-function OpenWhatsapp()
+function sendWhatsAppMassage()
 {
-	const WhatsApp = "com.whatsapp";
-	const intent = new intent(intent.ACTION_MAIN)
-	intent.setPackage(WhatsApp);
-	startActivity(intent);
+	var phoneNumber = "6283183101521";
+	var message = "hallo, apa kabar";
+
+	var url = "https://wa.me/" + phoneNumber + encodeURIComponent(message);
+	
+	window.open(url);
 }
 
  
